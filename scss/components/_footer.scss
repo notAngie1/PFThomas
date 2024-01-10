@@ -1,0 +1,35 @@
+/* footer */
+footer {
+    background-color: $bg-footer-color;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+}
+
+.links {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links h2 {
+    font-size: 2rem;
+}
+
+.footerImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+

@@ -1,0 +1,165 @@
+@import "./base";
+
+// Components
+@import "./components/card";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/icon";
+
+// Pages
+
+@import "./pages/index";
+@import "./pages/contacto";
+@import "./pages/experimento";
+@import "./pages/temas";
+
+
+
+
+
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(../img/backgroundDesktop.png);
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    /* INDEX */
+    h1 {
+        font-size: 5rem;
+        flex-direction: row;
+        align-items: end;
+    }
+
+    .tituloIndex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inputSearch {
+        display: flex;
+        width: 100%;
+    }
+
+    .iconInput {
+        margin: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .imgIndex {
+        width: 30%;
+    }
+
+    .tarjetaSuscribite {
+        flex-direction: row;
+        margin: 0;
+        border-radius: 100px 0px 100px 0px;
+    }
+
+    .tarjetaSuscribite input {
+        text-align: center;
+        align-items: center;
+        width: 50%;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .email {
+        font-size: 1.5rem;
+        flex-direction: row;
+    }
+
+    .email h2 {
+        font-size: 5rem;
+    }
+
+    .sectionForm {
+        margin: 0;
+        gap: 10px;
+    }
+
+    .mainNosotros {
+        flex-direction: row-reverse;
+        padding: 60px;
+        font-size: 6rem;
+        border-radius: 0px 100px 0px 100px;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .h2Nosotros,
+    h2 {
+        flex-direction: column;
+        font-size: 5rem;
+        margin: 10px;
+    }
+
+    .mainNosotros p {
+        font-size: 1rem;
+    }
+
+    /* PAGE TABLA */
+    .iframeVideo {
+        width: max-content;
+    }
+
+    article h3 {
+        font-size: 2rem;
+    }
+
+    article p {
+        font-size: 1rem;
+    }
+
+    .imgTabla {
+        max-width: 80%;
+    }
+
+    .ulArticle,
+    ol {
+        text-align: start;
+        font-size: 1rem;
+    }
+
+    /* PAGE TEMAS */
+    h3 {
+        font-size: 2rem;
+    }
+
+    .iframesJuegos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sectionJuegos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    /* PAGE CONTACTO */
+
+.sectionContacto{
+    flex-direction: row;
+}
+.formContacto{
+    flex-direction: column;
+}
+    .imgContacto {
+        display: flex;
+        background-attachment: fixed;
+        height: fit-content;
+        justify-content: flex-end;
+        border-radius: 60%;
+        border: solid;
+        clip-path: content-box;
+        width: 30%;
+    }
+}
+
+
+/* no es el diseño final */

@@ -1,531 +1,504 @@
-@import url('https://fonts.cdnfonts.com/css/adlam-display');
-@import url('https://fonts.cdnfonts.com/css/jetick');
-
+@charset "UTF-8";
+@import url("https://fonts.cdnfonts.com/css/adlam-display");
+@import url("https://fonts.cdnfonts.com/css/jetick");
 /* reseteo */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: rgb(99, 43, 159);
 }
 
 img {
-    max-width: 100%;
-}
-
-
-/* INDEX */
-
-body {
-    background-image: url(../img/backgroundIndex.png);
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1rem;
-    color: black;
-    font-family: 'ADLaM Display', sans-serif;
-}
-
-
-/* main */
-
-.inputSearch {
-    width: 140px;
-    padding: 5px;
-    color: white;
-    background-color: rgba(169, 94, 196, 0.557);
-    border: solid 1px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-}
-
-.iconInput {
-    display: flex;
-}
-
-h1 {
-    font-family: "ADLaM Display";
-    font-size: 2rem;
-    color: black;
-}
-
-.portadaIndex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.tituloIndex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.pIndex {
-    background-color: transparent;
-    backdrop-filter: blur(3px);
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.401);
-    font-family: "ADLaM Display";
-    font-size: 0.8rem;
-    padding: 10px;
-    width: 65%;
-    text-align: center;
-}
-
-.imgIndex {
-    display: flex;
-    width: 70%;
-}
-
-.carrouselIndex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: rgba(98, 62, 112, 0.479);
-    backdrop-filter: blur(3px);
-    object-fit: cover;
-}
-
-.tarjetaSuscribite {
-    margin: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    background-color: rgba(98, 62, 112, 0.479);
-    backdrop-filter: blur(3px);
-    border-radius: 15% 0% 15% 0%;
-    text-align: center;
-}
-
-.email h2 {
-    font-size: 1.5rem;
-}
-
-.email {
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.tarjetaSuscribite input {
-    padding: 10px;
-    font-family: "ADLaM Display";
-    color: white;
-    background-color: rgba(169, 94, 196, 0.557);
-    border: solid 1px;
-    border-radius: 20px;
-}
-
-.sectionForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainNosotros {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    border-radius: 0% 15% 0% 15%;
-    padding: 10px;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.609);
-    font-family: "ADLaM Display";
-    font-size: 1rem;
-    color: white;
-}
-
-.h2Nosotros {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-around;
-}
-
-span {
-    color: rgb(222, 164, 243);
-}
-
-.mainNosotros p {
-    color: #cdb4db;
-    font-family: sans-serif;
-    font-size: 0.8rem;
+  max-width: 100%;
 }
 
 /* footer */
 footer {
-    background-color: rgba(255, 255, 255, 0.633);
-    backdrop-filter: blur(3px);
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px;
+  background-color: rgba(255, 255, 255, 0.633);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
 }
 
 footer img {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .links {
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .links h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .footerImg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.icon p {
-    color: black;
-    font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 /* iconos */
-
 .iconController {
-    font-size: 3rem;
-    color: rgb(222, 164, 243);
+  font-size: 3rem;
+  color: white;
 }
 
 .icon {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    font-size: 3rem;
-    color: #cdb4db;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 3rem;
+  color: #cdb4db;
 }
 
 .iconSearch {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .iconEmail,
 #iconLoveUs,
 .iconInstagram {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .logo {
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.iconInput {
+  display: flex;
+}
+
+.icon p {
+  color: black;
+  font-size: 0.5rem;
+}
+
+/* INDEX */
+body {
+  background-image: url(../img/backgroundIndex.png);
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  color: black;
+  font-family: "ADLaM Display", sans-serif;
+}
+
+/* main */
+.inputSearch {
+  width: 140px;
+  padding: 5px;
+  color: white;
+  background-color: rgba(169, 94, 196, 0.557);
+  border: solid 1px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-family: "ADLaM Display", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
+.portadaIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tituloIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pIndex {
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.401);
+  font-family: "ADLaM Display", sans-serif;
+  font-size: 0.8rem;
+  padding: 10px;
+  width: 65%;
+  text-align: center;
+}
+
+.imgIndex {
+  display: flex;
+  width: 70%;
+}
+
+.carrouselIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(98, 62, 112, 0.479);
+  backdrop-filter: blur(3px);
+  object-fit: cover;
+}
+
+.tarjetaSuscribite {
+  margin: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(98, 62, 112, 0.479);
+  backdrop-filter: blur(3px);
+  border-radius: 15% 0% 15% 0%;
+  text-align: center;
+}
+
+.email h2 {
+  font-size: 1.5rem;
+}
+
+.email {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tarjetaSuscribite input {
+  padding: 10px;
+  font-family: "ADLaM Display", sans-serif;
+  color: white;
+  background-color: rgba(169, 94, 196, 0.557);
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+.sectionForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainNosotros {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  border-radius: 0% 15% 0% 15%;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.609);
+  font-family: "ADLaM Display", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.h2Nosotros {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  color: rgb(222, 164, 243);
+}
+
+.mainNosotros p {
+  color: #cdb4db;
+  font-family: sans-serif;
+  font-size: 0.8rem;
 }
 
 /* PAGE CONTACTO */
-
 .sectionContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(98, 62, 112, 0.479);
-    backdrop-filter: blur(3px);
-    margin: 10px;
-    padding: 30px;
-    border-radius: 50px;
-    color: white;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(98, 62, 112, 0.479);
+  backdrop-filter: blur(3px);
+  margin: 10px;
+  padding: 30px;
+  border-radius: 50px;
+  color: white;
+  gap: 20px;
 }
 
 .contacto h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .imgContacto {
-    display: none;
+  display: none;
 }
 
 form input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    font-family: "ADLaM Display";
-    color: white;
-    background-color: rgba(169, 94, 196, 0.557);
-    border: solid 1px;
-    border-radius: 20px;
-    font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  font-family: "ADLaM Display", sans-serif;
+  color: white;
+  background-color: rgba(169, 94, 196, 0.557);
+  border: solid 1px;
+  border-radius: 20px;
+  font-size: 0.7rem;
 }
 
 .formContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.8rem;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 #textoUsuario {
-    text-align: center;
-    background-color: transparent;
-    border-color: white;
-    color: white;
-}
-
-
-/* PAGE TEMAS */
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin-top: 20px;
-    margin: 10px;
-    background-color: rgba(98, 62, 112, 0.479);
-    backdrop-filter: blur(3px);
-    color: white;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.iframeVideo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: fit-content;
-}
-
-article p {
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-.ulArticle,
-ol {
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    text-align: start;
-}
-
-.iframesJuegos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    gap: 20px;
-}
-
-.linkJuegos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-}
-
-.sectionJuegos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.609);
-    backdrop-filter: blur(2px);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.609);
+  border-color: white;
+  color: white;
 }
 
 /* PAGE EXPERIMENTOS */
 h2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .articleExperimentos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
 }
 
+article h3 {
+  color: #cdb4db;
+}
 
+/* PAGE TEMAS */
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.609);
+  backdrop-filter: blur(3px);
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.iframeVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+}
+
+article p {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.ulArticle,
+ol {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+.iframesJuegos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  gap: 20px;
+}
+
+.linkJuegos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.sectionJuegos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  background-color: rgba(98, 62, 112, 0.479);
+  backdrop-filter: blur(2px);
+}
 
 @media (min-width: 768px) {
-    body {
-        background-image: url(../img/backgroundDesktop.png);
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-    /* INDEX */
-    h1 {
-        font-size: 5rem;
-        flex-direction: row;
-        align-items: end;
-    }
-
-    .tituloIndex {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .inputSearch {
-        display: flex;
-        width: 100%;
-    }
-
-    .iconInput {
-        margin: 10px;
-        padding: 10px;
-        align-items: center;
-    }
-
-    .imgIndex {
-        width: 30%;
-    }
-
-    .tarjetaSuscribite {
-        flex-direction: row;
-        margin: 0;
-        border-radius: 100px 0px 100px 0px;
-    }
-
-    .tarjetaSuscribite input {
-        text-align: center;
-        align-items: center;
-        width: 50%;
-        padding: 20px;
-        border-radius: 30px;
-    }
-
-    .email {
-        font-size: 1.5rem;
-        flex-direction: row;
-    }
-
-    .email h2 {
-        font-size: 5rem;
-    }
-
-    .sectionForm {
-        margin: 0;
-        gap: 10px;
-    }
-
-    .mainNosotros {
-        flex-direction: row-reverse;
-        padding: 60px;
-        font-size: 6rem;
-        border-radius: 0px 100px 0px 100px;
-        margin: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .h2Nosotros,
-    h2 {
-        flex-direction: column;
-        font-size: 5rem;
-        margin: 10px;
-    }
-
-    .mainNosotros p {
-        font-size: 1rem;
-    }
-
-    /* PAGE TABLA */
-    .iframeVideo {
-        width: max-content;
-    }
-
-    article h3 {
-        font-size: 2rem;
-    }
-
-    article p {
-        font-size: 1rem;
-    }
-
-    .imgTabla {
-        max-width: 80%;
-    }
-
-    .ulArticle,
-    ol {
-        text-align: start;
-        font-size: 1rem;
-    }
-
-    /* PAGE TEMAS */
-    h3 {
-        font-size: 2rem;
-    }
-
-    .iframesJuegos {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .sectionJuegos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
- 
-    /* PAGE CONTACTO */
-
-.sectionContacto{
+  body {
+    background-image: url(../img/backgroundDesktop.png);
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  /* INDEX */
+  h1 {
+    font-size: 5rem;
     flex-direction: row;
-}
-.formContacto{
+    align-items: end;
+  }
+  .tituloIndex {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .inputSearch {
+    display: flex;
+    width: 100%;
+  }
+  .iconInput {
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+  }
+  .imgIndex {
+    width: 30%;
+  }
+  .tarjetaSuscribite {
+    flex-direction: row;
+    margin: 0;
+    border-radius: 100px 0px 100px 0px;
+  }
+  .tarjetaSuscribite input {
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .email {
+    font-size: 1.5rem;
+    flex-direction: row;
+  }
+  .email h2 {
+    font-size: 5rem;
+  }
+  .sectionForm {
+    margin: 0;
+    gap: 10px;
+  }
+  .mainNosotros {
+    flex-direction: row-reverse;
+    padding: 60px;
+    font-size: 6rem;
+    border-radius: 0px 100px 0px 100px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .h2Nosotros,
+  h2 {
+    flex-direction: column;
+    font-size: 5rem;
+    margin: 10px;
+  }
+  .mainNosotros p {
+    font-size: 1rem;
+  }
+  /* PAGE TABLA */
+  .iframeVideo {
+    width: max-content;
+  }
+  article h3 {
+    font-size: 2rem;
+  }
+  article p {
+    font-size: 1rem;
+  }
+  .imgTabla {
+    max-width: 80%;
+  }
+  .ulArticle,
+  ol {
+    text-align: start;
+    font-size: 1rem;
+  }
+  /* PAGE TEMAS */
+  h3 {
+    font-size: 2rem;
+  }
+  .iframesJuegos {
+    display: flex;
+    flex-direction: row;
+  }
+  .sectionJuegos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* PAGE CONTACTO */
+  .sectionContacto {
+    flex-direction: row;
+  }
+  .formContacto {
+    flex-direction: column;
+  }
+  .imgContacto {
+    display: flex;
+    background-attachment: fixed;
+    height: fit-content;
+    justify-content: flex-end;
+    border-radius: 60%;
+    border: solid;
+    clip-path: content-box;
+    width: 30%;
+  }
 }
-    .imgContacto {
-        display: flex;
-        background-attachment: fixed;
-        height: fit-content;
-        justify-content: flex-end;
-        border-radius: 60%;
-        border: solid;
-        clip-path: content-box;
-        width: 30%;
-    }
-}
-
-
 /* no es el diseño final */
+
+/*# sourceMappingURL=styles.css.map */

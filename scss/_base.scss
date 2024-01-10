@@ -1,0 +1,32 @@
+$icon-color: rgb(99, 43, 159);
+$bg-tarjeta-color: rgba(98, 62, 112, 0.479);
+$input-bg-color: rgba(169, 94, 196, 0.557);
+$bg-tarjeta-color2: rgba(0, 0, 0, 0.609);
+$bg-footer-color: rgba(255, 255, 255, 0.633);
+$ff-ADLaMDisplay: 'ADLaM Display', sans-serif;
+$ff-sans-serif: sans-serif;
+$lila-color:#cdb4db;
+$black-color: black;
+$white-color: white;
+
+
+@import url('https://fonts.cdnfonts.com/css/adlam-display');
+@import url('https://fonts.cdnfonts.com/css/jetick');
+
+
+/* reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: $icon-color;
+}
+
+img {
+    max-width: 100%;
+}
+

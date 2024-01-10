@@ -1,0 +1,64 @@
+/* PAGE TEMAS */
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 10px;
+    background-color: $bg-tarjeta-color2;
+    backdrop-filter: blur(3px);
+    color:$white-color;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.iframeVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+article p {
+    font-family: $ff-sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.ulArticle,
+ol {
+    font-family: $ff-sans-serif;
+    font-size: 0.8rem;
+    text-align: start;
+}
+
+.iframesJuegos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 20px;
+}
+
+.linkJuegos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.sectionJuegos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:$white-color;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    background-color: $bg-tarjeta-color;
+    backdrop-filter: blur(2px);
+}
+
