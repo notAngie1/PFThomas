@@ -1,0 +1,32 @@
+.inputSearch {
+    @extend %template-inputs;
+    font-size: 0.8rem;
+    padding: 5px;
+    width: 140px;
+    padding: 5px;
+}
+
+%template-inputs {
+    font-family: $ff-ADLaMDisplay;
+    color: $white-color;
+    background-color: $input-bg-color;
+    border: solid 1px;
+    border-radius: 20px;
+}
+
+
+.tarjetaSuscribite input {
+    @extend %template-inputs;
+    padding: 10px;
+}
+
+form input {
+    @extend %template-center;
+    @extend %template-inputs;
+    padding: 10px;
+    font-size: 0.7rem;
+
+    &:hover {
+        background-color: $input-bg-color2;
+    }
+}

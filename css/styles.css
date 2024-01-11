@@ -17,6 +17,72 @@ img {
   max-width: 100%;
 }
 
+.sectionJuegos, .linkJuegos, .iframesJuegos, .iframeVideo, article, .articleExperimentos, h2, .formContacto, form input, .logo, .footerImg, .links, .mainNosotros, .sectionForm, .email, .sectionContacto, .tarjetaSuscribite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjetaSuscribite {
+  margin: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 60px;
+  color: white;
+  background-color: rgba(98, 62, 112, 0.479);
+  backdrop-filter: blur(3px);
+  border-radius: 15% 0% 15% 0%;
+  text-align: center;
+}
+
+.sectionContacto {
+  background-color: rgba(98, 62, 112, 0.479);
+  backdrop-filter: blur(3px);
+  margin: 10px;
+  padding: 30px;
+  border-radius: 50px;
+  color: white;
+  gap: 20px;
+}
+
+.email h2 {
+  font-size: 1.5rem;
+}
+
+.email {
+  font-size: 0.8rem;
+  gap: 10px;
+}
+
+.mainNosotros {
+  height: auto;
+  border-radius: 0% 15% 0% 15%;
+  padding: 60px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.609);
+  font-family: "ADLaM Display", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.h2Nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  color: rgb(222, 164, 243);
+}
+
+.mainNosotros p {
+  color: #cdb4db;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
 /* footer */
 footer {
   background-color: rgba(255, 255, 255, 0.633);
@@ -34,10 +100,6 @@ footer img {
 
 .links {
   font-size: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .links h2 {
@@ -45,10 +107,6 @@ footer img {
 }
 
 .footerImg {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
 }
 
@@ -78,10 +136,6 @@ footer img {
 
 .logo {
   font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
 }
 
@@ -92,6 +146,33 @@ footer img {
 .icon p {
   color: black;
   font-size: 0.5rem;
+}
+
+.inputSearch {
+  font-size: 0.8rem;
+  padding: 5px;
+  width: 140px;
+  padding: 5px;
+}
+
+form input, .tarjetaSuscribite input, .inputSearch {
+  font-family: "ADLaM Display", sans-serif;
+  color: white;
+  background-color: rgba(169, 94, 196, 0.557);
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+.tarjetaSuscribite input {
+  padding: 10px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 0.7rem;
+}
+form input:hover {
+  background-color: rgba(99, 43, 159, 0.557);
 }
 
 /* INDEX */
@@ -109,16 +190,6 @@ body {
 }
 
 /* main */
-.inputSearch {
-  width: 140px;
-  padding: 5px;
-  color: white;
-  background-color: rgba(169, 94, 196, 0.557);
-  border: solid 1px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-}
-
 h1 {
   font-family: "ADLaM Display", sans-serif;
   font-size: 2rem;
@@ -169,95 +240,7 @@ h1 {
   object-fit: cover;
 }
 
-.tarjetaSuscribite {
-  margin: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  background-color: rgba(98, 62, 112, 0.479);
-  backdrop-filter: blur(3px);
-  border-radius: 15% 0% 15% 0%;
-  text-align: center;
-}
-
-.email h2 {
-  font-size: 1.5rem;
-}
-
-.email {
-  font-size: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.tarjetaSuscribite input {
-  padding: 10px;
-  font-family: "ADLaM Display", sans-serif;
-  color: white;
-  background-color: rgba(169, 94, 196, 0.557);
-  border: solid 1px;
-  border-radius: 20px;
-}
-
-.sectionForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainNosotros {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: auto;
-  border-radius: 0% 15% 0% 15%;
-  padding: 10px;
-  margin: 10px;
-  background-color: rgba(0, 0, 0, 0.609);
-  font-family: "ADLaM Display", sans-serif;
-  font-size: 1rem;
-  color: white;
-}
-
-.h2Nosotros {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-around;
-}
-
-span {
-  color: rgb(222, 164, 243);
-}
-
-.mainNosotros p {
-  color: #cdb4db;
-  font-family: sans-serif;
-  font-size: 0.8rem;
-}
-
 /* PAGE CONTACTO */
-.sectionContacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(98, 62, 112, 0.479);
-  backdrop-filter: blur(3px);
-  margin: 10px;
-  padding: 30px;
-  border-radius: 50px;
-  color: white;
-  gap: 20px;
-}
-
 .contacto h2 {
   font-size: 2rem;
 }
@@ -266,23 +249,7 @@ span {
   display: none;
 }
 
-form input {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-  font-family: "ADLaM Display", sans-serif;
-  color: white;
-  background-color: rgba(169, 94, 196, 0.557);
-  border: solid 1px;
-  border-radius: 20px;
-  font-size: 0.7rem;
-}
-
 .formContacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 10px;
   font-size: 0.8rem;
   text-align: center;
@@ -296,18 +263,7 @@ form input {
 }
 
 /* PAGE EXPERIMENTOS */
-h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .articleExperimentos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
   margin: 10px;
 }
@@ -318,10 +274,6 @@ article h3 {
 
 /* PAGE TEMAS */
 article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
   margin-top: 20px;
   margin: 10px;
@@ -333,10 +285,6 @@ article {
 }
 
 .iframeVideo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   max-width: fit-content;
 }
 
@@ -354,24 +302,15 @@ ol {
 }
 
 .iframesJuegos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 1rem;
   gap: 20px;
 }
 
 .linkJuegos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 10px;
 }
 
 .sectionJuegos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: white;
   border-radius: 10px;
   padding: 5px;

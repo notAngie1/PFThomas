@@ -15,10 +15,7 @@ footer img {
 
 .links {
     font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %template-center;
 }
 
 .links h2 {
@@ -26,10 +23,7 @@ footer img {
 }
 
 .footerImg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %template-center;
     text-decoration: none;
 }
 

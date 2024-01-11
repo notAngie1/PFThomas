@@ -1,16 +1,10 @@
 /* PAGE EXPERIMENTOS */
 h2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %template-center;
 }
 
 .articleExperimentos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %template-center;
     padding: 20px;
     margin: 10px;
 }

@@ -1,0 +1,69 @@
+.tarjetaSuscribite {
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 60px;
+    @extend %template-center;
+    color:$white-color;
+    background-color: $bg-tarjeta-color;
+    backdrop-filter: blur(3px);
+    border-radius: 15% 0% 15% 0%;
+    text-align: center;
+}
+
+.sectionContacto {
+    @extend %template-center;
+    background-color: $bg-tarjeta-color;
+    backdrop-filter: blur(3px);
+    margin: 10px;
+    padding: 30px;
+    border-radius: 50px;
+    color:$white-color;
+    gap: 20px;
+}
+
+.email h2 {
+    font-size: 1.5rem;
+}
+
+.email {
+    font-size: 0.8rem;
+    @extend %template-center;
+    gap: 10px;
+}
+
+
+.sectionForm {
+    @extend %template-center;
+}
+
+.mainNosotros {
+    @extend %template-center;
+    height: auto;
+    border-radius: 0% 15% 0% 15%;
+    padding: 60px;
+    margin: 10px;
+    background-color: $bg-tarjeta-color2;
+    font-family: $ff-ADLaMDisplay;
+    font-size: 1rem;
+    color: $white-color;
+}
+
+.h2Nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: rgb(222, 164, 243);
+}
+
+.mainNosotros p {
+    color: $lila-color;
+    font-family: $ff-sans-serif;
+    font-size: 0.8rem;
+}
+
+

@@ -1,6 +1,7 @@
 $icon-color: rgb(99, 43, 159);
 $bg-tarjeta-color: rgba(98, 62, 112, 0.479);
 $input-bg-color: rgba(169, 94, 196, 0.557);
+$input-bg-color2: rgba(99, 43, 159, 0.557);
 $bg-tarjeta-color2: rgba(0, 0, 0, 0.609);
 $bg-footer-color: rgba(255, 255, 255, 0.633);
 $ff-ADLaMDisplay: 'ADLaM Display', sans-serif;
@@ -30,3 +31,9 @@ img {
     max-width: 100%;
 }
 
+%template-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
