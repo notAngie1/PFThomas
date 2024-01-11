@@ -11,6 +11,13 @@ body {
     font-size: 1rem;
     color: $black-color;
     font-family: $ff-ADLaMDisplay;
+
+    @include mq-desktop {
+        background-image: url(../img/backgroundDesktop.png);
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
 }
 
 /* main */
@@ -18,6 +25,12 @@ h1 {
     font-family: $ff-ADLaMDisplay;
     font-size: 2rem;
     color: $black-color;
+
+    @include mq-desktop {
+        font-size: 5rem;
+        flex-direction: row;
+        align-items: end;
+    }
 }
 
 .portadaIndex {
@@ -31,6 +44,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include mq-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .pIndex {
@@ -48,6 +67,10 @@ h1 {
 .imgIndex {
     display: flex;
     width: 70%;
+
+    @include mq-desktop {
+        width: 30%;
+    }
 }
 
 .carrouselIndex {
@@ -63,5 +86,3 @@ h1 {
     backdrop-filter: blur(3px);
     object-fit: cover;
 }
-
-

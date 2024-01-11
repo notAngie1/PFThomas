@@ -31,9 +31,17 @@ img {
     max-width: 100%;
 }
 
-%template-center{
+@mixin flex-center{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+@mixin mq-desktop{
+    @media (min-width: 758px){
+        @content;
+    }
+}
+
+

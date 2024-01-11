@@ -1,14 +1,24 @@
 /* PAGE EXPERIMENTOS */
 h2 {
-    @extend %template-center;
+    @include flex-center;
+
+    @include mq-desktop {
+        flex-direction: column;
+        font-size: 5rem;
+        margin: 10px;
+    }
 }
 
 .articleExperimentos {
-    @extend %template-center;
+    @include flex-center;
     padding: 20px;
     margin: 10px;
 }
 
-article h3{
-    color:$lila-color;
+article h3 {
+    color: $lila-color;
+
+    @include mq-desktop {
+        font-size: 2rem;
+    }
 }

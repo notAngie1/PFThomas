@@ -1,25 +1,33 @@
 /* PAGE TEMAS */
 article {
-    @extend %template-center;
+    @include flex-center;
     padding: 20px;
     margin-top: 20px;
     margin: 10px;
     background-color: $bg-tarjeta-color2;
     backdrop-filter: blur(3px);
-    color:$white-color;
+    color: $white-color;
     border-radius: 20px;
     text-align: center;
 }
 
 .iframeVideo {
-@extend %template-center;
+    @include flex-center;
     max-width: fit-content;
+
+    @include mq-desktop {
+        width: max-content;
+    }
 }
 
 article p {
     font-family: $ff-sans-serif;
     font-size: 0.8rem;
     text-align: center;
+
+    @include mq-desktop {
+        font-size: 1rem;
+    }
 }
 
 .ulArticle,
@@ -27,26 +35,54 @@ ol {
     font-family: $ff-sans-serif;
     font-size: 0.8rem;
     text-align: start;
+
+    @include mq-desktop {
+        text-align: start;
+        font-size: 1rem;
+    }
 }
 
 .iframesJuegos {
-    @extend %template-center;
+    @include flex-center;
     margin: 1rem;
     gap: 20px;
+
+    @include mq-desktop {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .linkJuegos {
-    @extend %template-center;
+    @include flex-center;
     margin: 10px;
 }
 
 .sectionJuegos {
-    @extend %template-center;
-    color:$white-color;
+    @include flex-center;
+    color: $white-color;
     border-radius: 10px;
     padding: 5px;
     margin: 10px;
     background-color: $bg-tarjeta-color;
     backdrop-filter: blur(2px);
+
+    @include mq-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
+h3 {
+    @include mq-desktop {
+        font-size: 2rem;
+    }
+}
+
+.imgTabla {
+    @include mq-desktop {
+        max-width: 80%;
+    }
+
+}

@@ -3,20 +3,44 @@
     font-size: 2rem;
 }
 
-.imgContacto {
+.img-fluid {
     display: none;
+
+    @media (min-width: 1200px) {
+        display: flex;
+        border-radius: 60%;
+    }
+}
+
+.imgContacto {
+
+    @include flex-center;
+    max-width: 30%;
+
 }
 
 .formContacto {
-    @extend %template-center;
+    @include flex-center;
     gap: 10px;
     font-size: 0.8rem;
     text-align: center;
+
+    @include mq-desktop {
+        flex-direction: column;
+    }
 }
 
 #textoUsuario {
     text-align: center;
     background-color: $bg-tarjeta-color2;
-    border-color:$white-color;
-    color:$white-color;
+    border-color: $white-color;
+    color: $white-color;
+}
+
+.sectionContacto {
+    @include mq-desktop {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
 }

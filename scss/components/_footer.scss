@@ -15,7 +15,7 @@ footer img {
 
 .links {
     font-size: 0.8rem;
-    @extend %template-center;
+    @include flex-center;
 }
 
 .links h2 {
@@ -23,7 +23,6 @@ footer img {
 }
 
 .footerImg {
-    @extend %template-center;
+    @include flex-center;
     text-decoration: none;
 }
-

@@ -3,42 +3,62 @@
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 60px;
-    @extend %template-center;
-    color:$white-color;
+    @include flex-center;
+    color: $white-color;
     background-color: $bg-tarjeta-color;
     backdrop-filter: blur(3px);
     border-radius: 15% 0% 15% 0%;
     text-align: center;
+
+    @include mq-desktop {
+        flex-direction: row;
+        margin: 0;
+        border-radius: 100px 0px 100px 0px;
+    }
 }
 
 .sectionContacto {
-    @extend %template-center;
+    @include flex-center;
     background-color: $bg-tarjeta-color;
     backdrop-filter: blur(3px);
     margin: 10px;
     padding: 30px;
     border-radius: 50px;
-    color:$white-color;
+    color: $white-color;
     gap: 20px;
 }
 
 .email h2 {
     font-size: 1.5rem;
+
+    @include mq-desktop {
+        font-size: 5rem;
+    }
 }
 
 .email {
     font-size: 0.8rem;
-    @extend %template-center;
+    @include flex-center;
     gap: 10px;
+
+    @include mq-desktop {
+        font-size: 1.5rem;
+        flex-direction: row;
+    }
 }
 
 
 .sectionForm {
-    @extend %template-center;
+    @include flex-center;
+
+    @include mq-desktop {
+        margin: 0;
+        gap: 10px;
+    }
 }
 
 .mainNosotros {
-    @extend %template-center;
+    @include flex-center;
     height: auto;
     border-radius: 0% 15% 0% 15%;
     padding: 60px;
@@ -47,6 +67,16 @@
     font-family: $ff-ADLaMDisplay;
     font-size: 1rem;
     color: $white-color;
+
+    @include mq-desktop {
+        flex-direction: row-reverse;
+        padding: 60px;
+        font-size: 6rem;
+        border-radius: 0px 100px 0px 100px;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .h2Nosotros {
@@ -54,6 +84,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+    @include mq-desktop {
+        flex-direction: column;
+        font-size: 5rem;
+        margin: 10px;
+    }
 }
 
 span {
@@ -64,6 +100,8 @@ span {
     color: $lila-color;
     font-family: $ff-sans-serif;
     font-size: 0.8rem;
+
+    @include mq-desktop {
+        font-size: 1rem;
+    }
 }
-
-
