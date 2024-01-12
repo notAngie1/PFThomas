@@ -297,6 +297,10 @@ body {
 }
 
 /* main */
+main {
+  margin-top: 20px;
+}
+
 h1 {
   font-family: "ADLaM Display", sans-serif;
   font-size: 2rem;

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Estamos aquí para ti. Encuentra toda la información de contacto necesaria para conectarte con el equipo de Oxytocin. ¡Comunicación directa para responder a tus preguntas!">
+    <meta name="description"
+        content="Estamos aquí para ti. Encuentra toda la información de contacto necesaria para conectarte con el equipo de Oxytocin. ¡Comunicación directa para responder a tus preguntas!">
     <title>Conéctate con Nosotros | Información de Contacto | Oxytocin</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="../img/logo Oxitocin.png" type="image/x-icon">
@@ -62,22 +63,23 @@
     </header>
     <main>
         <section class="sectionContacto">
-        
-                <form action="" class="formContacto"> 
-                    <h2>ESCRIBINOS</h2>
-                        <label for="nombreUsuario">INGRESE SU NOMBRE Y APELLIDO:</label>
-                        <input type="text" id="nombreUsuario" placeholder="Angeles Thomas">
-                        <label for="correoUsuario">INGRESE SU EMAIL:</label>
-                        <input type="email" id="correoUsuario" placeholder="Ejemplo@gmail.com">
-                        <label for="textoUsuario">Si te deseas contactar conmigo para cualquier sugerencia, idea,
-                            comentario, rellena el siguiente formulario:</label>
-                        <textarea name="" id="textoUsuario" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-                   
-                    <input type="submit" value="ENVIAR"> 
-                </form>
-                <div class="imgContacto">
-                    <img src="../img/undraw_messenger_re_8bky.svg" alt="imagen decorativa" class="img-fluid">
-                </div>
+
+            <form action="form.php" method="POST" class="formContacto">
+                <h2>ESCRIBINOS</h2>
+                <label for="nombreUsuario">INGRESE SU NOMBRE Y APELLIDO:</label>
+                <input type="text" id="nombreUsuario" name="fullname" placeholder="Angeles Thomas">
+                <label for="correoUsuario">INGRESE SU EMAIL:</label>
+                <input type="email" id="correoUsuario" name="email" placeholder="Ejemplo@gmail.com">
+                <label for="textoUsuario">Si te deseas contactar conmigo para cualquier sugerencia, idea,
+                    comentario, rellena el siguiente formulario:</label>
+                <textarea name="" id="textoUsuario" name="textarea" cols="30" rows="10"
+                    placeholder="Tu mensaje"></textarea>
+
+                <input type="submit" value="ENVIAR">
+            </form>
+            <div class="imgContacto">
+                <img src="../img/undraw_messenger_re_8bky.svg" alt="imagen decorativa" class="img-fluid">
+            </div>
         </section>
 
         <hr>
@@ -97,8 +99,9 @@
         <div class="footerImg">
             <a href="../index.html"><img src="../img/logo Oxitocin.png" alt="Logo" class="logo"></a>
             <div class="iconInstagram">
-            <a href="https://www.instagram.com/studying_quimica/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
-                class="logo"><i class="bi bi-instagram"></i></a></div>
+                <a href="https://www.instagram.com/studying_quimica/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+                    class="logo"><i class="bi bi-instagram"></i></a>
+            </div>
         </div>
 
         <div class="icon">
