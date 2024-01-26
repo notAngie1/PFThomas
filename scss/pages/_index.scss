@@ -27,7 +27,7 @@ main{
 
 h1 {
     font-family: $ff-ADLaMDisplay;
-    font-size: 2rem;
+    font-size: 3rem;
     color: $black-color;
 
     @include mq-desktop {
@@ -70,11 +70,18 @@ h1 {
 
 .imgIndex {
     display: flex;
-    width: 70%;
+    width: 90%;
 
     @include mq-desktop {
-        width: 30%;
+        width: 50%;
     }
+
+    
+img:hover{
+     filter: drop-shadow(4px 6px 12px $black-color);
+     transition: 0.5s;
+}
+
 }
 
 .carrouselIndex {

@@ -303,7 +303,7 @@ main {
 
 h1 {
   font-family: "ADLaM Display", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: black;
 }
 @media (min-width: 758px) {
@@ -348,12 +348,16 @@ h1 {
 
 .imgIndex {
   display: flex;
-  width: 70%;
+  width: 90%;
 }
 @media (min-width: 758px) {
   .imgIndex {
-    width: 30%;
+    width: 50%;
   }
+}
+.imgIndex img:hover {
+  filter: drop-shadow(4px 6px 12px black);
+  transition: 0.5s;
 }
 
 .carrouselIndex {
@@ -528,11 +532,12 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
 }
 @media (min-width: 758px) {
   h2 {
     flex-direction: column;
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 10px;
   }
 }
